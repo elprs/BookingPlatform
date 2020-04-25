@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Booking platform</title>
+  </head>
+  <body>
+    <div class="container" id="body-container" role="article">
+      <!-- header  -->
+
+      <header class="header">
+        <section class="search" role="search">
+          <input
+            type="search"
+            placeholder="icon --- Champs Elisees, Paris"
+            role="search"
+            alt="Search"
+            aria-label="search-bar"
+          />
+          <button class="search-btn">Search</button>
+        </section>
+        <section class="filters1">
+          <input
+            class="filters"
+            id="check-in"
+            type="date"
+            value="1980-08-26"
+            role="grid"
+            aria-label="pick-a-checkin-date"
+          />
+          <input
+            class="filters"
+            id="check-out"
+            type="date"
+            value="1980-08-26"
+            role="grid"
+            aria-label="pick-a-checkout-date"
+          />
+          <select class="filters" id="rooms" role="list">
+            <option>Family Rooms</option>
+            <option>Single Rooms</option>
+            <option>Double rooms</option>
+          </select>
+        </section>
+
+        <section class="filters2">
+          <div class="filter1" role="list">
+            <label name="price">
+              price
+              <input id="price" type="range" role="slider" />
+            </label>
+          </div>
+          <div class="filter2" role="list">
+            <div id="property-type" role="list">property-type</div>
+            <div id="guest-rating" role="list">guest-rating</div>
+          </div>
+          <div class="filter3" role="list">
+            <div id="location" role="listbox">location</div>
+            <div id="more-filters" role="listbox">more-filters</div>
+          </div>
+        </section>
+      </header>
+
+      <!-- main  -->
+      <main>
+        <section class="main1">
+          <div id="googleMap" role="img"></div>
+          <div id="sort-by" role="list">sortby</div>
+        </section>
+
+        <section class="main2" role="contentinfo"></section>
+          <div id="hotel-main-info">
+            <img
+              src="https://www.tornosnews.gr/en/files/Adriana_terrace_503650140_242651983.jpg"
+              alt="hotel-picture-1"
+            />
+            <!-- <img> // in the image i need wish list AND the counter 1/30 -->
+            <div class="main2" id="hotel-description" role="article">
+              <h2>title</h2>
+              <p>starts as images + (the word:) Hotel</p>
+              <p>Paris, 0.2 ...</p>
+              <p>8.3 info...</p>
+              <p>Excellent...9.2/10</p>
+            </div>
+            <div class="main2" id="hotel-price-info">
+              <p>hotel...</p>
+              <p>agata...</p>
+              <p>travel...</p>
+              <p>travel...</p>
+              <p>3nights...</p>
+              <p>free breakfast</p>
+              <button>View Deals</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer  -->
+      <footer></footer>
+    </div>
+
+    <!-- 
+  
+<script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+  </body>
+</html>
